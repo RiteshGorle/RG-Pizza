@@ -1,0 +1,147 @@
+/* WebSite Name: Gorle Pizza
+   Made by: Ritesh Gorle
+   Created: March 2023
+   Content: Pizza
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. NAVBAR
+03. LOGO
+04. MAIN CONTENT
+
+******************************************/
+
+
+/******************************/
+/*   01. BASIC CSS Style      */
+/******************************/   
+
+body{
+  background: black;
+}
+
+
+/******************************/
+/*       02.NAVBAR           */
+/******************************/   
+#brand {
+  font-weight: 900;
+  color: red;
+  font-size: 26px;
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-function: ease-in-out;
+}
+
+.navbar-black {
+  background-color: yellow !important;
+  color: !important;
+}
+
+.navbar-collapse, .navbar-nav, .nav-item {
+  color:  !important;
+}
+
+.nav-link{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .navbar-collapse {
+    background-color: yellow;
+  }
+}
+
+
+
+/******************************/
+/*          03. LOGO          */
+/******************************/   
+.logo{
+  border-radius: 20px;
+}
+
+/* Flash & keyframe animation */
+.flashing{
+  color:#f2f;
+  -webkit-animation: flash linear 1s infinite;
+  animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+/* Pulse & keyframe animation */
+.pulse-big-small{
+  -webkit-animation: pulse linear 3.15s infinite;
+  animation: pulse linear 3.15s infinite;
+}
+@-webkit-keyframes pulse {
+  0% { width:200px; } 
+  50% { width:225px; } 
+  100% { width:200px; }
+}
+@keyframes pulse {
+  0% { width:200px; } 
+  50% { width:225px; } 
+  100% { width:200px; }
+}
+
+
+/******************************/
+/*      04. MAIN CONTENT      */
+/******************************/   
+h1 {
+  font-weight: 900;
+  color: white;
+}
+
+.try{
+  color:white;
+}
+
+.para{
+  color:white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.button1{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background: yellow;
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  #why-content { display: block; }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 4000px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+   #why-content { display: none; }
+}
